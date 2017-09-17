@@ -1,0 +1,31 @@
+﻿<Window x:Class="ACQUIRE.SelectGameModeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACQUIRE"
+        mc:Ignorable="d"
+        Title="SelectGameModeWindow" Height="300" Width="220"
+        ResizeMode="NoResize"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="new_room_btn" Content="创建房间" Grid.Column="1" Grid.Row="1" Click="new_room_btn_Click"/>
+        <Button x:Name="search_room_btn" Content="寻找房间" Grid.Column="1" Grid.Row="3" Click="search_room_btn_Click"/>
+        <Button x:Name="single_btn" Content="单机模式" Grid.Column="1" Grid.Row="5" Click="single_btn_Click"/>
+
+    </Grid>
+</Window>
